@@ -1,0 +1,269 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.475in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.24in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\footnotesize  #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubheadingEDU}[7]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\footnotesize  #4} \\
+      \textit{\small#5} & \textit{\footnotesize  #6} \\
+      \textit{\small#7} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://dadrake3.github.io/LandingPage/}{\Large Daryl Drake}} & Email : \href{mailto:dadrake3@illinois.edu}{dadrake3@illinois.edu}\\
+  \href{https://dadrake3.github.io/LandingPage/}{https://dadrake3.github.io/LandingPage/} & Mobile : +1-630-800-5456 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheadingEDU
+      {University of Illinois}{Urbana / Champaign}
+      {Bachelor of Science in Computer Engineering}{Aug. 2014 -- May. 2019}
+      {Bachelor of Science in Bioengineering with a Concentration in Computational and Systems Biology}{GPA: 3.51 / 4.00}
+      {Minors in Mathematics and Chemistry}
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+  \resumeSubheading
+      {Epic}{Verona, WI}
+      {Software Development Intern}{May 2018 - August 2018}
+      \resumeItemListStart
+       \resumeItem{Summer Project}
+          {Developed a tool, that was subsequently integrated into Epic's software suite, which allows hospital administrators to more easily detect malicious use of their data visualization tools. Individually completed my project using Microsoft .NET to create a full stack web application wrapping SQL operations for auditing user logs and parsing relevant information from the session objects. Received lots of valuable comments when presenting my work at the end of the summer}
+          \resumeItem{Differential Privacy}
+          	{Researched the field of differential privacy and developed methods for integrating its tenets into epics data visualization platform}
+         %\resumeItem{Other Responsibilities}
+         %	{Attended team-wide and company-wide meetings, presented my summer project twice to first my team and then to Epic as a whole later on}
+      \resumeItemListEnd
+
+  
+  
+
+    \resumeSubheading
+      {Abbvie}{North Chicago, IL}
+      {Engineering Intern}{May 2016 - August 2016}
+      \resumeItemListStart
+       \resumeItem{Ultrasonic Welding}
+        {Optimized the function of a model auto-assembly unit used in the assembly of the Humira Autoinjector}
+        %  {Corrected the alignment and optimized the function of an ultrasonic welding machine used in the assembly of the Humira Autoinjector.}
+        \resumeItem{Force Testing}
+          {Prototyped fixtures using Solidworks and stereolithography / fused deposition modeling 3D printing techniques. Used and modified test methods designed to evaluate autoinjector weld breaking strengths on a Zwick force testing machine.}
+        \resumeItem{Insulin Dosage Calculator}
+        	 {Performed a code review, debugged, and updated to the new android API, a class II medical device application on a linux redhat machine over a remote ssh connection.}
+        %\resumeItem{Training and Daily Functions}
+	 %{Trained in GxP and medical device regulations as defined by the FDA with specific focus on global good manufacturing practices, as well as electronic lab notebook practices and data integrity and documentation.}% Attended departmental meetings and one-on-one meetings with directors, as well as lectures given by employees from various departments.}
+	%\resumeItem{Presentation}
+	 %{Presented a poster of  my work on ultrasonic welding and weld breaking strength at a company-wide research day}
+      \resumeItemListEnd
+
+    %\resumeSubheading
+    %  {Tissue Development and Engineering Laboratory}{Professor Gregory Underhill, University of Illinois}
+     % {Research Assistant}{Oct 2015 - March 2017}
+     % \resumeItemListStart
+     %   \resumeItem{Cell Culture and Substrate Preparation}
+     %     {Prepare fluorescent-bead-gel substrates of varying elasticity for cell culture in traction force microscopy experiments studying differentiation factors of liver tumor progenitor cells. Cell culture of liver tumor progenitor cells on substrates. Immunofluorescence staining for modified protein expression.}
+      %  \resumeItem{Traction Force Microscopy and Q-PCR}
+      %    {Analyze cellular membrane forces by running fluorescent traction force micrographs through Matlab and ImageJ softwares. Analyze gene expression in response to different growth factors by quantifying mRNA levels through Q-PCR}
+     %  \resumeItemListEnd
+     
+     
+     
+
+
+  \resumeSubHeadingListEnd
+  
+  
+%--------Extra Curricular-----------
+\section{Extracurriculars and Volunteering}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Alpha Sigma Phi Fraternity}{Oct 2014 - Present}
+      {Chapter President}{Nov 2016 - Nov 2017}
+      \resumeItemListStart
+       \resumeItem{Chapter Awards}
+          {Lead the Chapter from 23rd to 9th highest fraternity GPA on campus. Received the Silver Cup on behalf of the Chapter at our annual convention, the third highest honor an Alpha Sig chapter can receive.}  
+        \resumeItem{Responsibilities}
+          {Created and chaired committees, lead high-level chapter operations, and oversee the efforts of 17 elected officers. Instituted major organization changes including: revision of chapter bylaws, disciplinary processes, and overhauled risk management procedures to create a house culture of accountability. Participated on a university committee rewriting the Inter-Fraternity Council bylaws, the governing body of all on campus fraternities.}    
+      \resumeItemListEnd
+      
+     % \resumeSubheading
+      %{Carle Foundation Hospital}{Urbana, IL}
+      %{Student Volunteer}{Sept 2015 - Feb 2017}
+      %\resumeItemListStart
+        %\resumeItem{Same Day Surgery and Pediatrics Volunteering}
+          %{Provided comfort and conversation to patients and families. Assisted nurses in patient transportation, room changes, and provision of supplies. Provided reception support and giving general information to visitors and families.}
+         %\resumeItem{}
+        	%	{Observed open heart surgery as well as a variety of interventional procedures including exploratory angiography.}
+       %\resumeItemListEnd
+       
+       %\resumeSubheading
+      %{Illini Emergency Medical Services}{University of Illinois}
+      %{Student Volunteer}{Sept 2015 - Jan 2017}
+      %\resumeItemListStart
+        %\resumeItem{Responsibilities}
+          %{Trained in CPR, the use of an AED, and choking protocol. Provide emergency medical service to commencement, conferences, campus sporting events, and other special events put on by the university. Administer prompt, efficient, and responsible pre-hospital basic life support care to the public.}
+       %\resumeItemListEnd
+      
+      
+      
+      %\resumeSubheading
+      %{Boy Scouts of America Troop 46}{Glen Ellyn, Il}
+      %{Eagle Scout}{2007 - 2014}
+      %\resumeItemListStart
+       %\resumeItem{Eagle Scout Project}
+         % {Designed, constructed and installed a bench and a covered map kiosk for the Illinois Prairie Path/Great Western Trail running and bike trail. Coordinated the efforts of more than 30 volunteers to fundraise for and install the kiosk.}  
+       % \resumeItem{Volunteering}
+        %  {Volunteered for PADS, Habitat for Humanity, and the Northern Illinois Food Bank.}    
+      %\resumeItemListEnd
+
+
+
+
+
+  \resumeSubHeadingListEnd  
+  
+  
+  %-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+   \resumeSubItem{Virtual Reality Cadaver Lab}
+      {Over the course of a two semester senior design class, I worked with JUMP labs on campus to develop a VR visualization tool for 3d models of human anatomy generated from patient MRI and CT data. We used VR toolkit and unity along with an HTC vive to develop our VR environment, we then imported the 3d segmentation models created in FOVIA. Our project is still being actively developed at JUMP and is in plans to be used to train medical students at the new Engineering College of Medicine at UIUC. }
+    \resumeSubItem{AIAA tech project team leader}
+      {After joining AIAA in 2017, I joined the team working on mounting a 360 degree HD camera on a drone with a 3D printed a vibration dampening mount. We presented this project at Engineering Open House 2017. I then worked to transition the team towards creating a live head-tracking unit for the drone. With an Arduino nano and a 9-axis IMU, sensor fusion via the Madgwick algorithm is performed in real time to account for accelerometer noise, gyroscopic drift, and soft/ hard iron interference so as to produce accurate pitch and yaw values for the headset. These values are then used to remotely control a 2 axis camera gimbal mounted on an RC plane which then transmits a live camera feed to the wearer so as to give a live first person view while operating the plane. Presented at Engineering Open House 2018. Now, In my third year on the team I am one of the two team leaders and we hope to keep advancing our FPV capabilities.}
+    \resumeSubItem{Personal and Professional Web Development with AWS}
+      {I have used angular in conjunction with AWS to create a reusable gallery website template. I used AWS S3 to host the site as well as for image storage, AWS Cloudfront and Route53 were used to handling custom domain routing and content delivery. AWS Codepipeline and Codebuild were used to create continuous integration from a github repository. I also created a python script for quickly uploading the images to the S3 storage bucket, including metadata such as image titles and descriptions. With this template I was able to easily deploy my own personal photography website as well as an architectural gallery site. Furthermore, I used some aspects of my AWS stack to create a continuously integrated personal landing page. }
+    \resumeSubHeadingListEnd
+
+  
+   %--------SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Python, C, C++, C\#, Java, Javascript, JQuery, HTML, CSS, Typescript, LATEK, Spanish}\\
+    }
+    \item{
+      \textbf{Platforms}{: Angular, Cuda, Matlab, Simulink, Xcode, Android Studio, Unity Game Engine, VR Development, Arduino, Solidworks, Microsoft Office, ImageJ (scientific image processing), Photoshop, Illustrator, Microsoft .NET}
+    }
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{LED Train Sign}
+      {Through SSH and a headless Raspberry Pi, I am developing an led sign in  Python and C, which will display train times for a given station or radius for the Chicago L, will display the weather, and will have a variety of other features such as party mode and beat tracking / equalizer. This project also required(s) significant modification and optimization of the Rasbian OS via low level linux operations. }
+    \resumeSubItem{Rap Guru}
+      {Used python and the rap genius API to create Markov chain models for generating rap lyrics that sound similar to a given artist. Developed novel heuristics to combine similar artists models in order to solve the problem that some artists lyric bases were just not large enough to support a realistic markov chain. Used AWS and Angular to build a website wrapper for my custom API implemented in API Gateway and AWS Lambda. }
+     \resumeSubItem{Unity Game Development}
+      {Created and hosted through github 5 different webGL games with the unity game engine and C\# . Utilized programmatic generation of terrains and obstacles as well as modified AI controls of game objects. One game under active development is an endless snowboarding game using real physics and a completely programmatically generated terrain. }
+      \resumeSubItem{Classroom Projects}
+      {Developed from scratch a linux based operating system for the x86 32 bit intel architecture. Implemented all core OS functionality such as system calls, user code execution, task scheduling, memory management, paging, video memory mapping, exception and interrupt handling. This was for my ECE 391 final project. I also wrote a Tetris clone from scratch, completely implemented in hardware via system verilog and an Altera FPGA board. Our project included all the hardware VGA mapping as well as hardware based game logic. For the same class I also implemented the LC3 CPU in system verilog on an FPGA. This project was for ECE 385. }
+     \resumeSubItem{BMES Heart Phantom Design Team}
+      {Prototyped through Solidworks along with 3D printing techniques and the Arduino IDE a functioning heart phantom to be used by several of our senior research professors in bio-imaging experiments. Presented at a booth at Engineering Open House 2016.}
+     \resumeSubItem{Cardiology Textbook Chapter}
+      {Co-authored a chapter on the history of aortic surgery.}
+     \resumeSubItem{Other Classroom Projects}
+      {Implemented multiple bioinformatics, data mining, and machine learning algorithms in C++, and python such as Apriori and Decision-Tree-Induction. Conducted research comparing different methods of multiple sequence alignment on biological datasets, specifically on 23 and 16s ribosomal RNA. Developed a 2 component Windkessel model of systemic cardiovascular flow in Matlab and Simulink. Created GPU kernels for accelerating linear algebra calculations and machine learning applications. }
+   \resumeSubHeadingListEnd
+ 
+
+
+ 
+  %-------- Organizations and Awards------------
+\section{Awards}
+  \resumeSubHeadingListStart
+    \item{
+      {James Scholar (2014 - PRESENT), Deans List Fall 2015, Phi Sigma Theta and Phi Eta Sigma national collegiate sophomore and freshman honors fraternities, AP Scholar with Distinction, Illinois State Scholar}\\
+    }
+  \resumeSubHeadingListEnd
+  
+ %--------Relevant Coursework----
+  \section{Relevant Coursework}
+  \resumeSubHeadingListStart
+    \item{
+    {Artificial Intelligence, GPU Programming, Operating System Design, Hardware Design, Data Mining, Bioinformatics, Data Structures, Computer Systems Engineering, Discrete Mathematics, Chaos Theory, Differential Equations, Linear Algebra, Signal Processing, Bio-Statistics, Modeling Human Physiology and Lab, Biomedical Instrumentation and Lab, Cell and Tissue Engineering and Lab}
+    }
+   \resumeSubHeadingListEnd
+    
+
+ 
+
+
+%-------------------------------------------
+\end{document}
