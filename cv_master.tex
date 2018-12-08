@@ -43,22 +43,28 @@
   }
 }
 
+\newcommand{\resumeItemNoHeading}[1]{
+  \item\small{
+    {#1\vspace{-2pt}}
+  }
+}
+
 \newcommand{\resumeSubheading}[4]{
   \vspace{1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\footnotesize  #4} \\
-    \end{tabular*}\vspace{-8pt}
+    \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubheadingEDU}[7]{
-  \vspace{-1pt}\item
+  \vspace{-1pt}\item[]
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\footnotesize  #4} \\
       \textit{\small#5} & \textit{\footnotesize  #6} \\
       \textit{\small#7} \\
-    \end{tabular*}\vspace{-8pt}
+    \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
@@ -68,7 +74,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -78,8 +84,9 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://dadrake3.github.io/LandingPage/}{\Large Daryl Drake}} & Email : \href{mailto:dadrake3@illinois.edu}{dadrake3@illinois.edu}\\
-  \href{https://dadrake3.github.io/LandingPage/}{https://dadrake3.github.io/LandingPage/} & Mobile : +1-630-800-5456 \\
+  \textbf{\href{www.linkedin.com/in/daryl-drake}{\Large Daryl Drake}} & Email : \href{mailto:dadrake3@illinois.edu}{dadrake3@gmail.edu}\\
+  \href{www.linkedin.com/in/daryl-drake}{www.linkedin.com/in/daryl-drake}
+   & Mobile : +1-630-800-5456 \\
 \end{tabular*}
 
 
@@ -99,165 +106,174 @@
 \section{Experience}
   \resumeSubHeadingListStart
   
+ % Heath Care Engineering Systems Center Virtual Reality Lab on campus in conjunction with 
+    \resumeSubheading
+      {Jump ARCHES}{Urbana, Il}
+      {Software Developer}{September 2018 - Present}
+      \resumeItemListStart
+		\resumeItemNoHeading {Developing a pipeline process to take 2-D DICOM images for either CT or MRI data, generate 3D models with segmentation, then use this 3D model in an ultrasound simulation.}
+		\resumeItemNoHeading {The simulated ultrasound signal will be generated in unity and paired with haptic feedback devices for first training medical students in how to use an ultrasound, and then for training them on how to use an ultrasound to locate a breast tumor and perform a needle based biopsy}
+		\resumeItemNoHeading {The training environment will then be ported to virtual reality to give a truly immersive training experience}
+		\resumeItemNoHeading{The final deliverable will be a software that allows a student to arbitrarily input real patient data and then practice using an ultrasound to diagnose and treat certain diseases }
+		\resumeItemNoHeading {Multiple papers are currently in the publication process for this and similar work and are actively being expanded upon}
+
+      \resumeItemListEnd
+  
   \resumeSubheading
       {Epic}{Verona, WI}
       {Software Development Intern}{May 2018 - August 2018}
       \resumeItemListStart
-       \resumeItem{Summer Project}
-          {Developed a tool, that was subsequently integrated into Epic's software suite, which allows hospital administrators to more easily detect malicious use of their data visualization tools. Individually completed my project using Microsoft .NET to create a full stack web application wrapping SQL operations for auditing user logs and parsing relevant information from the session objects. Received lots of valuable comments when presenting my work at the end of the summer}
-          \resumeItem{Differential Privacy}
-          	{Researched the field of differential privacy and developed methods for integrating its tenets into epics data visualization platform}
-         %\resumeItem{Other Responsibilities}
-         %	{Attended team-wide and company-wide meetings, presented my summer project twice to first my team and then to Epic as a whole later on}
+      	\resumeItemNoHeading {Created a full stack web app for hospital administrators to more easily detect malicious use of their data visualization tools}  
+	\resumeItemNoHeading {Developed said web app by extending the existing EPIC codebase an API}
+	\resumeItemNoHeading {My work was subsequently merged into an upcoming update to Epic's primary software suite}
+       	\resumeItemNoHeading {Designed and implemented a C\# API in Microsoft .NET wrapping SQL operations for auditing user logs and parsing session objects}
+       	\resumeItemNoHeading {Developed a web app with JQuery as a front-end for interacting with the C\# API}
+       	\resumeItemNoHeading {Researched the field of differential privacy and developed methods for integrating its tenets into Epic's platform}
+	\resumeItemNoHeading {Participated in all levels of company meetings, including presenting my internship project work to both my team and department}
       \resumeItemListEnd
 
-  
-  
-
-    \resumeSubheading
+  \resumeSubheading
       {Abbvie}{North Chicago, IL}
       {Engineering Intern}{May 2016 - August 2016}
       \resumeItemListStart
-       \resumeItem{Ultrasonic Welding}
-        {Optimized the function of a model auto-assembly unit used in the assembly of the Humira Autoinjector}
-        %  {Corrected the alignment and optimized the function of an ultrasonic welding machine used in the assembly of the Humira Autoinjector.}
-        \resumeItem{Force Testing}
-          {Prototyped fixtures using Solidworks and stereolithography / fused deposition modeling 3D printing techniques. Used and modified test methods designed to evaluate autoinjector weld breaking strengths on a Zwick force testing machine.}
-        \resumeItem{Insulin Dosage Calculator}
-        	 {Performed a code review, debugged, and updated to the new android API, a class II medical device application on a linux redhat machine over a remote ssh connection.}
-        %\resumeItem{Training and Daily Functions}
-	 %{Trained in GxP and medical device regulations as defined by the FDA with specific focus on global good manufacturing practices, as well as electronic lab notebook practices and data integrity and documentation.}% Attended departmental meetings and one-on-one meetings with directors, as well as lectures given by employees from various departments.}
-	%\resumeItem{Presentation}
-	 %{Presented a poster of  my work on ultrasonic welding and weld breaking strength at a company-wide research day}
+       %\resumeItem{Ultrasonic Welding}
+       	\resumeItemNoHeading {Optimized the function of a model auto-assembly unit used in the assembly of the Humira Autoinjector}
+       	\resumeItemNoHeading {Prototyped fixtures using Solidworks and stereolithography/fused deposition modeling 3D printing techniques}
+       	\resumeItemNoHeading {Used and modified test methods designed to evaluate autoinjector weld breaking strengths on a Zwick force testing machine}
+      	\resumeItemNoHeading {Performed a code review, debugged, and updated to the new android API, an Insulin Dosage Calculator, a class II medical device, on a Linux Redhat machine}
+      	\resumeItemNoHeading {Trained in GxP and medical device regulations as defined by the FDA with specific focus on global good manufacturing practices, as well as electronic lab notebook practices and data integrity and documentation}
+	\resumeItemNoHeading {Attended departmental meetings and one-on-one meetings with directors, as well as lectures given by employees from various departments.}
+	\resumeItemNoHeading {Presented a poster of  my work on ultrasonic welding and weld breaking strength at a company-wide research day}
       \resumeItemListEnd
-
-    %\resumeSubheading
-    %  {Tissue Development and Engineering Laboratory}{Professor Gregory Underhill, University of Illinois}
-     % {Research Assistant}{Oct 2015 - March 2017}
-     % \resumeItemListStart
-     %   \resumeItem{Cell Culture and Substrate Preparation}
-     %     {Prepare fluorescent-bead-gel substrates of varying elasticity for cell culture in traction force microscopy experiments studying differentiation factors of liver tumor progenitor cells. Cell culture of liver tumor progenitor cells on substrates. Immunofluorescence staining for modified protein expression.}
-      %  \resumeItem{Traction Force Microscopy and Q-PCR}
-      %    {Analyze cellular membrane forces by running fluorescent traction force micrographs through Matlab and ImageJ softwares. Analyze gene expression in response to different growth factors by quantifying mRNA levels through Q-PCR}
-     %  \resumeItemListEnd
-     
-     
-     
-
-
+      
   \resumeSubHeadingListEnd
   
   
+     
+%--------SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \item[]{
+    	\textbf{Languages}{: Python, C, x86, System Verilog, C++, C\#, SQL, Java, Javascript, JQuery, HTML, CSS, Typescript, LATEK, Spanish}
+	}
+    \item[]{
+      \textbf{Platforms}{: Angular, Cuda, Quartus, ModelSim, FPGA, NIOS II soc, Raspberry Pi, Matlab, Simulink, Xcode, Android Studio, Unity Game Engine, VR Development, Arduino, Solidworks, Microsoft Office, ImageJ (scientific image processing), Photoshop, Illustrator, Microsoft .NET}
+    	}
+  \resumeSubHeadingListEnd
+	
+  
+
+  %-----------PROJECTS-----------------
+\section{Projects}
+		
+  \resumeSubHeadingListStart
+      \resumeSubItem{AIAA tech project team leader}
+      {When the team was formed in 2016, we began working on mounting a 360 degree HD camera to a drone with a 3D printed vibration-dampening mount that we designed and printed. We also modified the drone to have moveable landing gear to protect the camera when landing and to move out of the way while filming. We were able to get some very interesting footage of campus that we could then view with a virtual reality headset. We had always wanted to develop a system for flying the drone in first person, but live streaming 360 degree HD video would have had terrible latency so we decided to go in a different direction. We came to the conclusion that developing our own modular head tracking unit would give us the results we wanted. Our system consists of an Arduino nano and a 9-axis inertial mass unit (IMU) which records 3d accelerometer, gyroscope, and magnetometer readings. To interface with the IMU we had to write a C driver utilizing the i2c protocol to properly configure and access the IMU. This stage of the project was especially difficult as our chips only documentation was a register map and we had to configured the on board magnetometer as a slave device. Due to accelerometer noise, gyroscopic drift, and hard iron interference, none of these sensors alone can give stable values for yaw, pitch, and roll. We therefore had to pass this raw data through a sensor fusion algorithm to correct for those problems. We initially decided to try Kallman filtering but because of memory and performance constraints on the small Arduino nanos, such a computationally intensive algorithm would not be feasible. We then found a newer sensor fusion algorithm, the Madgwick algorithm, which was able to give us stable real time values for yaw, pitch, and roll. This sensor was then placed on our headset. Over an RF uplink, the Euler angles for the headset are transmitted to an Arduino nano on the drone. Out of 3d printed parts we made a custom 2-axis camera gimbal controlled by servos connected to the nano on the drone. The camera is connected to an independent RF transmitter which then connects to our headset to display the live camera feed. Originally we were going to mount this system on a RC glider but because none of us were experienced RC pilots, this plane was quickly destroyed beyond repair and we had to pivot to using a drone. Ultimately we crashed our drone as well, but were able to salvage it with 3d printed parts that we designed and developed. Now in my third year on the team, I am one of the two team leaders and we hope to keep advancing our FPV capabilities by developing a heads-up display for our live video feed as well as perfecting our head tracking system. We have presented our work at Engineering Open House 2017, 2018, and plan on presenting again in 2019.}
+    \resumeSubItem{Virtual Reality Cadaver Lab}   
+      {Over the course of a two semester senior design class, I worked at the Heath Care Engineering Systems Center Virtual Reality Lab on campus in conjunction with Jump Simulation to develop a VR visualization tool for 3d models of human anatomy generated from patient MRI and CT data. VR-toolkit and the Unity game engine along with an HTC Vive were used to develop our VR learning environment. FOVIA was used to perform segmentation on our raw patient data and generate color models that could be imported into Unity. Our project is still being actively developed at Jump and will be used to train  medical students at the new Engineering College of Medicine at the University of Illinois at Urbana Champaign.}
+    \resumeSubItem{Personal and Professional Web Development with AWS}
+      {I have used Angular in conjunction with Amazon Web Services (AWS) to create a reusable gallery website template. I used AWS S3 to host the site as well as for image storage. AWS Cloudfront and Route53 were used for handling custom domain routing and content delivery. AWS Codepipeline and Codebuild were used to create continuous integration from a Github repository. I also created a Python script for quickly uploading the images to an S3 storage bucket, including metadata such as image titles and descriptions. With this template I was able to easily deploy my own personal photography website as well as an architectural gallery site. Furthermore, I used some aspects of my AWS stack to create a continuously integrated personal landing page. }
+    \resumeSubItem{LED Train Sign}
+      {Via a headless Raspberry Pi and two 16x32 LED matrices, I have created a Python program which displays current train times for the Chicago "L" train, the current local weather, and other updates, as well as a variety of color settings for the LEDs. I have also integrated the program with an IR sensor such that the device can be remotely controlled. I used Python multiprocessing to handle asynchronous LED updates and remote input. As the LED matrix Python library I was using allowed for flashing of PIL images to the LED screen I was able to use Python Imaging Library to create what was displayed on the screen instead of having to write my own wrappers for directly interfacing with the hardware. Furthermore, I was able to create a local debuggable model of my LED screen via a PIL image that was displayed on a Matplotlib graph in real time. This significantly sped up the development process as I could not use Pycharm's built in debugger instead of debugging through print statements over ssh. This also removed the startup time for the LEDs that made development go much slower. Furthermore using the image based abstraction I was able to create much more interesting visual effects such as moving Perlin noise heatmaps or animations based on the weather and time of day and leaves the options open to display anything that can be described by a 16 x 64 pixel image. Originally I was having very bad synchronization issues with the remote input and the LED updates, but by using inheritance and passing iteratable objects around rather than calling timed functions I was able to avoid nearly every synchronization issue I had before. I completed the project by building a custom shadowbox with an LED on off button and surface mounted inputs for power and ethernet (if wifi is not available). I configured the device the run on startup and revert to a low power sleep mode when the power button is unclicked. I also had to create custom PCB's for interfacing with the Pi's GPIO header.}
+    \resumeSubItem{Rap Guru}
+      {Used Python and the rap genius API to create Markov chain models for generating rap lyrics that sound similar to a given artist. Developed novel heuristics to combine similar artist's models in order to solve the problem that some lyric bases were just not large enough to support a realistic Markov chain. Used AWS and Angular to build a website wrapper for my custom API implemented in API Gateway and AWS Lambda. }
+     \resumeSubItem{Homebrew Linux Kernel}
+     {Developed from scratch an operating system for the x86 32 bit Intel architecture based on the Linux kernel. Implemented all core OS functionality such as system calls, user code execution, task scheduling, memory management, paging, video memory mapping, exception and interrupt handling.}
+     \resumeSubItem{Hardware Tetris and Other FPGA Work}
+     {I wrote a Tetris clone from scratch and completely implemented in hardware via System Verilog and an Altera FPGA board. I had to write all the hardware VGA mapping as well as hardware based game logic. For the same class I had to also implement the LC3 instruction set in system Verilog. Furthermore, I worked with the NIOS II soc processor for interfacing C code with our FPGA designs. For one of my soc projects I had to develop a hardware accelerator for AES encryption and decryption as well as a USB-C hardware interface. For all of my designs I first had to use ModelSim to verify our design before implementation on the FPGA.}
+     \resumeSubItem{CUDA and DSP}
+      {Designed several different GPU hardware accelerator kernels in CUDA and PTX assembly. Developed many linear algebra and machine learning kernels, for example optimizing tensor calculations in a convolutional neural network. I also have experience working with image and audio processing as it relates to GPU optimizations. Furthermore, I am very well versed in digital and analog signal processing and control systems.}
+     \resumeSubItem{Unity Game Development}
+      {Created and hosted through Github, 5 different webGL games with the Unity game engine and C\#. Utilized programmatic generation of terrains and obstacles as well as modified AI game object controllers. One game under active development is an endless snowboarding game using real physics and programmatically generated terrain. }
+      \resumeSubItem{BMES Heart Phantom Design Team}
+      {Prototyped through Solidworks, 3D printing, and Arduino microcontrollers a functioning heart phantom to be used by several of our senior research professors in bio-imaging experiments. Presented at Engineering Open House 2016.}
+     \resumeSubItem{Cardiology Textbook Chapter}
+      {Co-authored a chapter on the history of aortic surgery.}
+     \resumeSubItem{Other Classroom Projects}
+      {Implemented multiple bioinformatics, data mining, and machine learning algorithms in C++ and Python such as Apriori, Decision-Tree-Induction, Game Trees, Min-Max trees, Single and Multilayered Perceptrons, Pathfinding, and A*. Conducted research comparing different methods of multiple sequence alignment on biological datasets, specifically on 23s and 16s ribosomal RNA. Additionally we developed a 3-component Windkessel model of systemic cardiovascular flow in Matlab and Simulink.  }
+   \resumeSubHeadingListEnd
+ 
+
 %--------Extra Curricular-----------
 \section{Extracurriculars and Volunteering}
   \resumeSubHeadingListStart
   
     \resumeSubheading
-      {Alpha Sigma Phi Fraternity}{Oct 2014 - Present}
-      {Chapter President}{Nov 2016 - Nov 2017}
+      {Alpha Sigma Phi Fraternity}{Oct 2014 - Present}{Chapter President}{Nov 2015 - Nov 2016}
       \resumeItemListStart
-       \resumeItem{Chapter Awards}
-          {Lead the Chapter from 23rd to 9th highest fraternity GPA on campus. Received the Silver Cup on behalf of the Chapter at our annual convention, the third highest honor an Alpha Sig chapter can receive.}  
-        \resumeItem{Responsibilities}
-          {Created and chaired committees, lead high-level chapter operations, and oversee the efforts of 17 elected officers. Instituted major organization changes including: revision of chapter bylaws, disciplinary processes, and overhauled risk management procedures to create a house culture of accountability. Participated on a university committee rewriting the Inter-Fraternity Council bylaws, the governing body of all on campus fraternities.}    
+      	\resumeItemNoHeading {Lead the Chapter from 23rd to 9th highest fraternity GPA on campus} 
+       	\resumeItemNoHeading {Lead the Chapter to earn a Silver Cup at our annual convention after multiple years without an award. This is the third highest honor an Alpha Sig Chapter can receive.}  
+        \resumeItemNoHeading {Created and chaired committees, lead high-level Chapter operations, and directed the efforts of 17 elected officers} 
+        \resumeItemNoHeading {Revised the Chapter bylaws and disciplinary processes} 
+        \resumeItemNoHeading {Overhauled risk management procedures to create a house culture of accountability}
+        \resumeItemNoHeading {Instituted our first chapter philanthropy event in several years, which remains a yearly tradition that raises thousands of dollars for charity}
+        \resumeItemNoHeading {Organized the first blood drive hosted at the Chapter house, an event subsequently held every semester}
+        \resumeItemNoHeading {Participated on a University committee rewriting the Inter-Fraternity Council bylaws, the governing body of all on-campus fraternities}    
       \resumeItemListEnd
       
-     % \resumeSubheading
-      %{Carle Foundation Hospital}{Urbana, IL}
-      %{Student Volunteer}{Sept 2015 - Feb 2017}
-      %\resumeItemListStart
-        %\resumeItem{Same Day Surgery and Pediatrics Volunteering}
-          %{Provided comfort and conversation to patients and families. Assisted nurses in patient transportation, room changes, and provision of supplies. Provided reception support and giving general information to visitors and families.}
-         %\resumeItem{}
-        	%	{Observed open heart surgery as well as a variety of interventional procedures including exploratory angiography.}
-       %\resumeItemListEnd
+       \resumeSubheading{Tissue Development and Engineering Laboratory}{Professor Gregory Underhill, University of Illinois}{Research Assistant}{Oct 2015 - March 2017}
+      \resumeItemListStart
+       	 \resumeItemNoHeading {Prepared fluorescent-bead-gel substrates of varying elasticity for traction force microscopy}% experiments studying differentiation factors of liver tumor progenitor cells}
+         \resumeItemNoHeading {Cultured liver tumor progenitor cells on custom gel substrates}
+         \resumeItemNoHeading {Performed Immunofluorescence staining to study modified protein expression and differentiation factors}
+        	 \resumeItemNoHeading {Analyzed cellular membrane tensile forces by running fluorescent traction force micrographs through Matlab and ImageJ softwares}
+         \resumeItemNoHeading {Analyzed gene expression in response to different growth factors by quantifying mRNA levels through Q-PCR}
+       \resumeItemListEnd
+
+      \resumeSubheading {Carle Foundation Hospital}{Urbana, IL}{Same Day Surgery and Pediatrics Volunteering}{Sept 2015 - Feb 2017}
+      	\resumeItemListStart
+        	  \resumeItemNoHeading {Assisted nurses in patient transportation, room changes, and provision of supplies}
+           \resumeItemNoHeading {Provided reception support and general information to visitors and families}
+           \resumeItemNoHeading {Regularly Interacted with pediatrics patients, by playing with, comforting, and conversing with them and they're families   }
+       	\resumeItemListEnd
        
-       %\resumeSubheading
-      %{Illini Emergency Medical Services}{University of Illinois}
-      %{Student Volunteer}{Sept 2015 - Jan 2017}
-      %\resumeItemListStart
-        %\resumeItem{Responsibilities}
-          %{Trained in CPR, the use of an AED, and choking protocol. Provide emergency medical service to commencement, conferences, campus sporting events, and other special events put on by the university. Administer prompt, efficient, and responsible pre-hospital basic life support care to the public.}
-       %\resumeItemListEnd
+       \resumeSubheading {Carle Foundation Hospital}{Urbana, IL}{Physician Shadowing}{Sept 2017 - April 2017}
+      	\resumeItemListStart 
+      	  \resumeItemNoHeading {Observed open heart surgery as well as a variety of interventional procedures including exploratory angiography}
+      	\resumeItemListEnd
+
+                 
+       \resumeSubheading{Illini Emergency Medical Services}{University of Illinois}{Student Volunteer}{Sept 2015 - Jan 2017}
+      \resumeItemListStart
+       	\resumeItemNoHeading {Trained in CPR, the use of an AED, and choking protocol}
+      	\resumeItemNoHeading {Provided emergency medical service to commencement, conferences, campus sporting events, and other special events put on by the University}
+       	\resumeItemNoHeading {Administered prompt, efficient, and responsible pre-hospital basic life support care to the public}
+      \resumeItemListEnd
       
       
       
-      %\resumeSubheading
-      %{Boy Scouts of America Troop 46}{Glen Ellyn, Il}
-      %{Eagle Scout}{2007 - 2014}
-      %\resumeItemListStart
-       %\resumeItem{Eagle Scout Project}
-         % {Designed, constructed and installed a bench and a covered map kiosk for the Illinois Prairie Path/Great Western Trail running and bike trail. Coordinated the efforts of more than 30 volunteers to fundraise for and install the kiosk.}  
+      \resumeSubheading
+      {Boy Scouts of America Troop 46}{Glen Ellyn, Il}
+      {Eagle Scout}{2007 - 2014}
+      \resumeItemListStart
+     % \resumeItem{Eagle Scout Project}
+     \resumeItemNoHeading
+          {Designed, constructed and installed a bench and a covered map kiosk for the Illinois Prairie Path/Great Western Trail running and bike trail. Coordinated the efforts of more than 30 volunteers to fundraise for, build, and install the kiosk and bench.}  
        % \resumeItem{Volunteering}
-        %  {Volunteered for PADS, Habitat for Humanity, and the Northern Illinois Food Bank.}    
-      %\resumeItemListEnd
+       \resumeItemNoHeading
+          {Volunteered for PADS, Habitat for Humanity, and the Northern Illinois Food Bank.}    
+      \resumeItemListEnd
 
 
 
 
 
   \resumeSubHeadingListEnd  
-  
-  
-  %-----------PROJECTS-----------------
-\section{Projects}
-  \resumeSubHeadingListStart
-   \resumeSubItem{Virtual Reality Cadaver Lab}
-      {Over the course of a two semester senior design class, I worked with JUMP labs on campus to develop a VR visualization tool for 3d models of human anatomy generated from patient MRI and CT data. We used VR toolkit and unity along with an HTC vive to develop our VR environment, we then imported the 3d segmentation models created in FOVIA. Our project is still being actively developed at JUMP and is in plans to be used to train medical students at the new Engineering College of Medicine at UIUC. }
-    \resumeSubItem{AIAA tech project team leader}
-      {After joining AIAA in 2017, I joined the team working on mounting a 360 degree HD camera on a drone with a 3D printed a vibration dampening mount. We presented this project at Engineering Open House 2017. I then worked to transition the team towards creating a live head-tracking unit for the drone. With an Arduino nano and a 9-axis IMU, sensor fusion via the Madgwick algorithm is performed in real time to account for accelerometer noise, gyroscopic drift, and soft/ hard iron interference so as to produce accurate pitch and yaw values for the headset. These values are then used to remotely control a 2 axis camera gimbal mounted on an RC plane which then transmits a live camera feed to the wearer so as to give a live first person view while operating the plane. Presented at Engineering Open House 2018. Now, In my third year on the team I am one of the two team leaders and we hope to keep advancing our FPV capabilities.}
-    \resumeSubItem{Personal and Professional Web Development with AWS}
-      {I have used angular in conjunction with AWS to create a reusable gallery website template. I used AWS S3 to host the site as well as for image storage, AWS Cloudfront and Route53 were used to handling custom domain routing and content delivery. AWS Codepipeline and Codebuild were used to create continuous integration from a github repository. I also created a python script for quickly uploading the images to the S3 storage bucket, including metadata such as image titles and descriptions. With this template I was able to easily deploy my own personal photography website as well as an architectural gallery site. Furthermore, I used some aspects of my AWS stack to create a continuously integrated personal landing page. }
-    \resumeSubHeadingListEnd
-
-  
-   %--------SKILLS------------
-\section{Skills}
-  \resumeSubHeadingListStart
-    \item{
-      \textbf{Languages}{: Python, C, C++, C\#, Java, Javascript, JQuery, HTML, CSS, Typescript, LATEK, Spanish}\\
-    }
-    \item{
-      \textbf{Platforms}{: Angular, Cuda, Matlab, Simulink, Xcode, Android Studio, Unity Game Engine, VR Development, Arduino, Solidworks, Microsoft Office, ImageJ (scientific image processing), Photoshop, Illustrator, Microsoft .NET}
-    }
-  \resumeSubHeadingListEnd
-
-
-%-----------PROJECTS-----------------
-\section{Projects}
-  \resumeSubHeadingListStart
-    \resumeSubItem{LED Train Sign}
-      {Through SSH and a headless Raspberry Pi, I am developing an led sign in  Python and C, which will display train times for a given station or radius for the Chicago L, will display the weather, and will have a variety of other features such as party mode and beat tracking / equalizer. This project also required(s) significant modification and optimization of the Rasbian OS via low level linux operations. }
-    \resumeSubItem{Rap Guru}
-      {Used python and the rap genius API to create Markov chain models for generating rap lyrics that sound similar to a given artist. Developed novel heuristics to combine similar artists models in order to solve the problem that some artists lyric bases were just not large enough to support a realistic markov chain. Used AWS and Angular to build a website wrapper for my custom API implemented in API Gateway and AWS Lambda. }
-     \resumeSubItem{Unity Game Development}
-      {Created and hosted through github 5 different webGL games with the unity game engine and C\# . Utilized programmatic generation of terrains and obstacles as well as modified AI controls of game objects. One game under active development is an endless snowboarding game using real physics and a completely programmatically generated terrain. }
-      \resumeSubItem{Classroom Projects}
-      {Developed from scratch a linux based operating system for the x86 32 bit intel architecture. Implemented all core OS functionality such as system calls, user code execution, task scheduling, memory management, paging, video memory mapping, exception and interrupt handling. This was for my ECE 391 final project. I also wrote a Tetris clone from scratch, completely implemented in hardware via system verilog and an Altera FPGA board. Our project included all the hardware VGA mapping as well as hardware based game logic. For the same class I also implemented the LC3 CPU in system verilog on an FPGA. This project was for ECE 385. }
-     \resumeSubItem{BMES Heart Phantom Design Team}
-      {Prototyped through Solidworks along with 3D printing techniques and the Arduino IDE a functioning heart phantom to be used by several of our senior research professors in bio-imaging experiments. Presented at a booth at Engineering Open House 2016.}
-     \resumeSubItem{Cardiology Textbook Chapter}
-      {Co-authored a chapter on the history of aortic surgery.}
-     \resumeSubItem{Other Classroom Projects}
-      {Implemented multiple bioinformatics, data mining, and machine learning algorithms in C++, and python such as Apriori and Decision-Tree-Induction. Conducted research comparing different methods of multiple sequence alignment on biological datasets, specifically on 23 and 16s ribosomal RNA. Developed a 2 component Windkessel model of systemic cardiovascular flow in Matlab and Simulink. Created GPU kernels for accelerating linear algebra calculations and machine learning applications. }
-   \resumeSubHeadingListEnd
- 
-
 
  
   %-------- Organizations and Awards------------
 \section{Awards}
   \resumeSubHeadingListStart
-    \item{
-      {James Scholar (2014 - PRESENT), Deans List Fall 2015, Phi Sigma Theta and Phi Eta Sigma national collegiate sophomore and freshman honors fraternities, AP Scholar with Distinction, Illinois State Scholar}\\
+    \resumeItemNoHeading{
+      {James Scholar (2014 - Present), Deans List Fall 2015, Phi Sigma Theta and Phi Eta Sigma national collegiate sophomore and freshman honors fraternities, AP Scholar with Distinction, Illinois State Scholar, Alpha Eta Mu Beta national bioengineering honors society, Order of Omega national fraternity honors society}\\
     }
   \resumeSubHeadingListEnd
   
  %--------Relevant Coursework----
   \section{Relevant Coursework}
   \resumeSubHeadingListStart
-    \item{
-    {Artificial Intelligence, GPU Programming, Operating System Design, Hardware Design, Data Mining, Bioinformatics, Data Structures, Computer Systems Engineering, Discrete Mathematics, Chaos Theory, Differential Equations, Linear Algebra, Signal Processing, Bio-Statistics, Modeling Human Physiology and Lab, Biomedical Instrumentation and Lab, Cell and Tissue Engineering and Lab}
+    \resumeItemNoHeading{
+    {Algorithms, Digital Signal Processing with Lab, Security, Artificial Intelligence, GPU Programming, Operating System Design, Hardware Design, Data Mining, Bioinformatics, Data Structures, Computer Systems Engineering, Discrete Mathematics, Chaos Theory, Differential Equations, Linear Algebra, Signal Processing, Bio-Statistics, Modeling Human Physiology with Lab, Biomedical Instrumentation with Lab, Cell and Tissue Engineering with Lab}
     }
    \resumeSubHeadingListEnd
     
