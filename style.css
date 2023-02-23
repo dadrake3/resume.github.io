@@ -1,0 +1,77 @@
+body {
+    font-family: "Courier New";
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-bottom: 8px;
+}
+
+h3, h4, ul {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+blockquote {
+    margin-inline-start: 6px;
+    background-color: azure;
+    padding: 10px;
+    margin-inline-end: 0px;
+}
+
+#edu {
+    margin-left: 10px;
+}
+
+.eduBody {
+    margin-left: 20px;
+}
+
+.skillList, .eduList {
+    display: flex;
+}
+
+.skillList ul, .eduList ul  {
+    width: 80%;
+    margin-top: 10px;
+    margin-left: auto;
+}
+
+.skillList ul li, .eduList ul li {
+    background-color: azure;
+    list-style: none;
+    display: inline-flex;
+    border-radius: 10px;
+    padding: 2px 8px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.25);
+    margin: 3px -2px;
+}
+
+#skillz {
+    margin: 10px 10px; 
+}
+
+.eduHeader {
+    background-color: azure;
+    padding: 10px;
+    margin-inline-start: -5px;
+    margin-inline-end: 0px;
+
+}
+
+.test {
+    display: flex;
+    justify-content: space-between;
+}
+
+#vol ul{
+    list-style: none;
+    margin-inline-start: -30px;
+    margin-top: 20px;
+}
+
+#gpa {
+    margin-right: 10px;
+}
