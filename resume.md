@@ -9,37 +9,37 @@
 
 ## Experience
 
-> ### Akuna Capital<span style="float: right">Chicago, IL</span>
-> #### Quantitative Software Developer<span style="float: right">Aug 2019 - Jan 2023</span>
+> ### <span>Akuna Capital<span style="float: right">Chicago, IL</span></span>
+> #### <span>Quantitative Software Developer<span style="float: right">Aug 2019 - Jan 2023</span></span>
 
-- Led a cross-functional team to develop and implement an internal trade quality metric system in python, providing real-time analysis of trade quality and risk to all trading desks.
-- Designed, developed, and managed scalable data ETL pipelines using Python, Apache Flink and Apache Kafka on an AWS Elastic Kubernetes cluster, resulting in significantly increased throughput and accuracy of data processing.
-- Orchestrated the entire lifecycle of our streaming services on Kubernetes and Docker, utilizing Grafana and Prometheus to implement comprehensive monitoring dashboards and alerts.
+- Led a cross-functional team of 7+ indirect reports to develop and implement an internal trade quality metric system in Python handling millions of trades per day and integrating data from throughout our ecosystem to provide real-time analysis of trade quality and risk to all trading desks.
+- Designed, deployed, and managed scalable data ETL pipelines using Python, Apache Flink, and Apache Kafka on an AWS Elastic Kubernetes cluster, resulting in significantly increased throughput and accuracy of data processing.
+- Orchestrated the build, configuration, and lifecycle of our streaming services on Jenkins, Kubernetes, and Docker, utilizing Grafana and Prometheus to implement comprehensive monitoring dashboards and alerts.
 - Administered multiple Postgres Timescale databases, ensuring their availability, reliability, and security, optimizing performance, and implementing changes to meet business requirements.
 - Collaborated closely with traders to conduct quantitative analysis of trading data using Apache Spark and PostgreSQL, identifying patterns and diagnosing issues within our data infrastructure.
 - Built automated workflows for backfills, daily report generation, and data integrity checks using Databricks and Argo.
-- Developed extensive Python libraries utilized company-wide for efficient data storage and manipulation, and for seamless interfacing with our C++ math APIs.
-- Transformed Jupyter notebooks into production ready Python dashboards using Pandas and Matplotlib, enabling traders and researchers to visually interact with our risk models.
+- Revamped extensive Python libraries utilized company-wide for efficient data storage and manipulation, and for seamless interfacing with our C++ math APIs.
+- Transformed Jupyter notebooks into production-ready Python dashboards using Pandas and Matplotlib, enabling traders and researchers to interact visually with our risk models.
 
-> ### Jump ARCHES Virtual Reality Lab<span style="float: right">Urbana, IL</span>
-> #### Software Developer / Research Assistant<span style="float: right">September 2017 - March 2019</span>
+> ### <span>Jump ARCHES Virtual Reality Lab<span style="float: right">Urbana, IL</span></span>
+> #### <span>Software Developer / Research Assistant<span style="float: right">September 2017 - March 2019</span></span>
 
 - Produced a virtual reality teaching environment for medical students using the Unity game engine, Steam VR and C#, enabling immersive interaction with 3D models of human anatomy.
 - Developed a Python pipeline using PyTorch to automatically segment 2D DICOM MRI and CT scans and convert them into 3D models.
 
-> ### Epic Systems<span style="float: right">Verona, WI</span>
-> #### Software Development Intern <span style="float: right">May 2018 - August 2018</span>
+> ### <span>Epic Systems<span style="float: right">Verona, WI</span></span>
+> #### <span>Software Development Intern <span style="float: right">May 2018 - August 2018</span></span>
 
 - Created a full-stack .NET web app using C# and MySQL for hospital administrators to detect and prevent malicious access patterns in their data research tools.
 
-> ### Abbvie Pharmaceuticals<span style="float: right">North Chicago, IL</span>
-> #### Engineering Intern <span style="float: right">May 2016 - August 2016</span>
+> ### <span>Abbvie Pharmaceuticals<span style="float: right">North Chicago, IL</span></span>
+> #### <span>Engineering Intern <span style="float: right">May 2016 - August 2016</span></span>
 
 - Optimized the performance of an auto-assembly unit used in the manufacturing process of medical devices and verified results through tensile strength testing.
 - Designed and prototyped custom fixtures for tensile strength experiments using SolidWorks and Stereolithography/Fused Deposition Modeling 3D printing.
 
-> ### Tissue Development and Engineering Laboratory <span style="float: right">Urbana, IL</span>
-> #### Research Assistant <span style="float: right">Oct 2015 - March 2017</span>
+> ### <span>Tissue Development and Engineering Laboratory <span style="float: right">Urbana, IL</span></span>
+> #### <span>Research Assistant <span style="float: right">Oct 2015 - March 2017</span></span>
 
 - Cultured liver tumor progenitor cells and embedded them on custom fluorescent-bead-gel substrates for traction force microscopy experiments.
 - Analyzed gene expression changes in response to varying growth factors and tensile forces by quantifying mRNA levels through Q-PCR analysis. 
@@ -98,14 +98,17 @@
 <div class=skillList>
 **Technologies:**
 
+- GrapQL
 - Apache Kafka
 - Apache Flink
 - Apache Spark
 - Google Protobuf
-- Databrix
+- Databricks
 - Pandas
 - Matplotlib
 - PyTorch
+- Scikit-Learn
+- SciPy
 - Asyncio
 - MultiThreading
 - MultiProcessing
@@ -127,7 +130,7 @@
 <div class=skillList>
 **Databases:**
 
-- PostgresSQL
+- PostgreSQL
 - Timescale
 - PgBouncer 
 - NoSQL
@@ -147,6 +150,9 @@
 - Aurora
 - DynamoDB
 - IAM
+- MSK
+- AppSync
+- Cloudfront
 </div>
 
 <div class=skillList>
@@ -175,6 +181,13 @@
 - JIRA
 </div>
 
+<div class=skillList>
+**Frontend Frameworks:** 
+
+- Angular
+- React
+</div>
+
 <!-- <div class=skillList>
 **Operating Systems:**
 
@@ -200,3 +213,4 @@
 - Eagle Scout, Boy Scouts of America Troop 46 </span><span style="float: right">2007 - 2014</span>
 
 </vol>
+ 

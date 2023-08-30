@@ -11,8 +11,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -38,23 +41,27 @@ href="https://github.com/dadrake3">https://github.com/dadrake3</a></span>
 <!-- Next section -->
 <h2 id="experience">Experience</h2>
 <blockquote>
-<h3 id="akuna-capitalchicago-il">Akuna Capital<span
-style="float: right">Chicago, IL</span></h3>
-<h4 id="quantitative-software-developeraug-2019---jan-2023">Quantitative
+<h3 id="akuna-capitalchicago-il"><span>Akuna Capital<span
+style="float: right">Chicago, IL</span></span></h3>
+<h4
+id="quantitative-software-developeraug-2019---jan-2023"><span>Quantitative
 Software Developer<span style="float: right">Aug 2019 - Jan
-2023</span></h4>
+2023</span></span></h4>
 </blockquote>
 <ul>
-<li>Led a cross-functional team to develop and implement an internal
-trade quality metric system in python, providing real-time analysis of
-trade quality and risk to all trading desks.</li>
-<li>Designed, developed, and managed scalable data ETL pipelines using
-Python, Apache Flink and Apache Kafka on an AWS Elastic Kubernetes
+<li>Led a cross-functional team of 7+ indirect reports to develop and
+implement an internal trade quality metric system in Python handling
+millions of trades per day and integrating data from throughout our
+ecosystem to provide real-time analysis of trade quality and risk to all
+trading desks.</li>
+<li>Designed, deployed, and managed scalable data ETL pipelines using
+Python, Apache Flink, and Apache Kafka on an AWS Elastic Kubernetes
 cluster, resulting in significantly increased throughput and accuracy of
 data processing.</li>
-<li>Orchestrated the entire lifecycle of our streaming services on
-Kubernetes and Docker, utilizing Grafana and Prometheus to implement
-comprehensive monitoring dashboards and alerts.</li>
+<li>Orchestrated the build, configuration, and lifecycle of our
+streaming services on Jenkins, Kubernetes, and Docker, utilizing Grafana
+and Prometheus to implement comprehensive monitoring dashboards and
+alerts.</li>
 <li>Administered multiple Postgres Timescale databases, ensuring their
 availability, reliability, and security, optimizing performance, and
 implementing changes to meet business requirements.</li>
@@ -63,20 +70,21 @@ of trading data using Apache Spark and PostgreSQL, identifying patterns
 and diagnosing issues within our data infrastructure.</li>
 <li>Built automated workflows for backfills, daily report generation,
 and data integrity checks using Databricks and Argo.</li>
-<li>Developed extensive Python libraries utilized company-wide for
+<li>Revamped extensive Python libraries utilized company-wide for
 efficient data storage and manipulation, and for seamless interfacing
 with our C++ math APIs.</li>
-<li>Transformed Jupyter notebooks into production ready Python
+<li>Transformed Jupyter notebooks into production-ready Python
 dashboards using Pandas and Matplotlib, enabling traders and researchers
-to visually interact with our risk models.</li>
+to interact visually with our risk models.</li>
 </ul>
 <blockquote>
-<h3 id="jump-arches-virtual-reality-laburbana-il">Jump ARCHES Virtual
-Reality Lab<span style="float: right">Urbana, IL</span></h3>
+<h3 id="jump-arches-virtual-reality-laburbana-il"><span>Jump ARCHES
+Virtual Reality Lab<span style="float: right">Urbana,
+IL</span></span></h3>
 <h4
-id="software-developer-research-assistantseptember-2017---march-2019">Software
+id="software-developer-research-assistantseptember-2017---march-2019"><span>Software
 Developer / Research Assistant<span style="float: right">September 2017
-- March 2019</span></h4>
+- March 2019</span></span></h4>
 </blockquote>
 <ul>
 <li>Produced a virtual reality teaching environment for medical students
@@ -86,11 +94,12 @@ interaction with 3D models of human anatomy.</li>
 2D DICOM MRI and CT scans and convert them into 3D models.</li>
 </ul>
 <blockquote>
-<h3 id="epic-systemsverona-wi">Epic Systems<span
-style="float: right">Verona, WI</span></h3>
-<h4 id="software-development-intern-may-2018---august-2018">Software
+<h3 id="epic-systemsverona-wi"><span>Epic Systems<span
+style="float: right">Verona, WI</span></span></h3>
+<h4
+id="software-development-intern-may-2018---august-2018"><span>Software
 Development Intern <span style="float: right">May 2018 - August
-2018</span></h4>
+2018</span></span></h4>
 </blockquote>
 <ul>
 <li>Created a full-stack .NET web app using C# and MySQL for hospital
@@ -98,10 +107,12 @@ administrators to detect and prevent malicious access patterns in their
 data research tools.</li>
 </ul>
 <blockquote>
-<h3 id="abbvie-pharmaceuticalsnorth-chicago-il">Abbvie
-Pharmaceuticals<span style="float: right">North Chicago, IL</span></h3>
-<h4 id="engineering-intern-may-2016---august-2016">Engineering Intern
-<span style="float: right">May 2016 - August 2016</span></h4>
+<h3 id="abbvie-pharmaceuticalsnorth-chicago-il"><span>Abbvie
+Pharmaceuticals<span style="float: right">North Chicago,
+IL</span></span></h3>
+<h4 id="engineering-intern-may-2016---august-2016"><span>Engineering
+Intern <span style="float: right">May 2016 - August
+2016</span></span></h4>
 </blockquote>
 <ul>
 <li>Optimized the performance of an auto-assembly unit used in the
@@ -112,11 +123,13 @@ experiments using SolidWorks and Stereolithography/Fused Deposition
 Modeling 3D printing.</li>
 </ul>
 <blockquote>
-<h3 id="tissue-development-and-engineering-laboratory-urbana-il">Tissue
+<h3
+id="tissue-development-and-engineering-laboratory-urbana-il"><span>Tissue
 Development and Engineering Laboratory <span
-style="float: right">Urbana, IL</span></h3>
-<h4 id="research-assistant-oct-2015---march-2017">Research Assistant
-<span style="float: right">Oct 2015 - March 2017</span></h4>
+style="float: right">Urbana, IL</span></span></h3>
+<h4 id="research-assistant-oct-2015---march-2017"><span>Research
+Assistant <span style="float: right">Oct 2015 - March
+2017</span></span></h4>
 </blockquote>
 <ul>
 <li>Cultured liver tumor progenitor cells and embedded them on custom
@@ -172,14 +185,17 @@ style="float: right">2014 - 2019</span></h3>
 <div class="skillList">
 <p><strong>Technologies:</strong></p>
 <ul>
+<li>GrapQL</li>
 <li>Apache Kafka</li>
 <li>Apache Flink</li>
 <li>Apache Spark</li>
 <li>Google Protobuf</li>
-<li>Databrix</li>
+<li>Databricks</li>
 <li>Pandas</li>
 <li>Matplotlib</li>
 <li>PyTorch</li>
+<li>Scikit-Learn</li>
+<li>SciPy</li>
 <li>Asyncio</li>
 <li>MultiThreading</li>
 <li>MultiProcessing</li>
@@ -201,7 +217,7 @@ style="float: right">2014 - 2019</span></h3>
 <div class="skillList">
 <p><strong>Databases:</strong></p>
 <ul>
-<li>PostgresSQL</li>
+<li>PostgreSQL</li>
 <li>Timescale</li>
 <li>PgBouncer</li>
 <li>NoSQL</li>
@@ -221,6 +237,9 @@ style="float: right">2014 - 2019</span></h3>
 <li>Aurora</li>
 <li>DynamoDB</li>
 <li>IAM</li>
+<li>MSK</li>
+<li>AppSync</li>
+<li>Cloudfront</li>
 </ul>
 </div>
 <div class="skillList">
@@ -247,6 +266,13 @@ style="float: right">2014 - 2019</span></h3>
 <li>GitHub</li>
 <li>GitLab</li>
 <li>JIRA</li>
+</ul>
+</div>
+<div class="skillList">
+<p><strong>Frontend Frameworks:</strong></p>
+<ul>
+<li>Angular</li>
+<li>React</li>
 </ul>
 </div>
 <!-- <div class=skillList>
